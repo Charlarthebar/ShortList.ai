@@ -23,26 +23,45 @@ ShortList.ai addresses this structural mismatch by:
 - Enabling employers to discover qualified passive candidates earlier in the hiring cycle
 
 ## MVP Scope
-The core hypothesis is that:
-**Users are willing to track jobs over time and engage with skill-based matching even when no immediate opening exists.**
+The core hypothesis is this: **Users are willing to track jobs over time and engage with skill-based matching even when no immediate opening exists.**
 
-Candidate-Side MVP
+## Candidate-Side MVP
 - Account creation (manual input)
 - Resume upload or structured skill entry
 - Ability to subscribe to a specific job, including filled roles
 - Simple skill-based match score (declared skills vs. job requirements)
 - Notification when job status changes or match score improves
 
-Employer-Side MVP
+## Employer-Side MVP
 - Ability to post or claim a job
 - View anonymized subscribed candidates
 - Invite selected candidates to apply
 
-Explicit Non-Goals for MVP
+## Explicit Non-Goals for MVP
 - Full ATS replacement
 - Large-scale resume parsing
 - Global job ingestion
 - Monetization or payments
 - AI interview coaching or career pathing
 
-### Tooling Plan
+## Tooling Plan
+
+### Backend & Data
+Python + FastAPI — API development
+PostgreSQL — jobs, users, skills
+pgvector or equivalent — basic skill similarity
+Lightweight LLM usage (API-based) for job and skill normalization
+
+### Frontend
+React + TypeScript
+Web-first, mobile-friendly UI
+Focus on clarity over visual polish
+
+### Infrastructure
+GitHub — single source of truth
+Vercel / Render — deployment
+Supabase or Firebase — authentication (if needed)
+
+### Product & Collaboration
+Slack / Discord — team communication
+In-person meetings/discussions - team communication
