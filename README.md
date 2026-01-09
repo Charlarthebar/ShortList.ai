@@ -65,3 +65,4 @@ The core hypothesis is this: **Users are willing to track jobs over time and eng
 ### Product & Collaboration
 - Slack / Discord — team communication
 - In-person meetings/discussions - team communication
+
