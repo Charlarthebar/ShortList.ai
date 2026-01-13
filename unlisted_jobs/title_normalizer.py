@@ -275,10 +275,15 @@ class TitleNormalizer:
             r'\badministrative assistant\b',
             r'\bexecutive assistant\b',
             r'\boffice (assistant|admin)\b',
+            r'\badmin(istrative)? support (assistant|professional|clerk)\b',
+            r'\blead admin support\b',
+            r'\boffice support\b',
         ],
         'Customer Service Representative': [
             r'\bcustomer service\b',
             r'\bcsr\b',
+            r'\bcustomer service rep(resentative)?\b',
+            r'\bassociate customer service\b',
         ],
         'Human Resources Specialist': [
             r'\bhr (specialist|generalist)\b',
@@ -306,24 +311,35 @@ class TitleNormalizer:
             r'\bsocial worker\b',
             r'\bclinical social worker\b',
             r'\bcsw\b',
+            r'\bsocial services specialist\b',
+            r'\bsocial svcs specialist\b',
+            r'\bsocial service(s)? (specialist|rep|representative)\b',
+            r'\bassociate social services\b',
+            r'\bsr social services\b',
         ],
         'Correction Officer': [
-            r'\bcorrection officer\b',
-            r'\bcorrections officer\b',
-            r'\bcorrectional officer\b',
+            r'\bcorrection(s|al)? officer\b',
+            r'\bcorrection(s|al)? worker\b',
+            r'\bcorrection(s|al)? sergeant\b',
+            r'\bcorrection(s|al)? program\b',
         ],
         'Police Officer': [
             r'\bpolice officer\b',
             r'\bstate police trooper\b',
-            r'\bprobation officer\b',
             r'\blaw enforcement\b',
             r'\bsheriff\b',
             r'\btrooper\b',
+            r'\bcorporal\b',
+            r'\bdetective\b(?!.*lieutenant)',
+            r'\bofficer\b(?=.*(police|patrol|special))',
+            r'\bspecial police officer\b',
         ],
         'Licensed Practical Nurse': [
             r'\blicensed practical nurse\b',
             r'\blpn\b',
             r'\bpractical nurse\b',
+            r'\bpsychiatric nurse\b',
+            r'\bsupervisory psychiatric nurse\b',
         ],
         'Program Coordinator': [
             r'\bprogram coordinator\b',
@@ -403,6 +419,9 @@ class TitleNormalizer:
             r'\bclerk\b',
             r'\boffice clerk\b',
             r'\badministrative clerk\b',
+            r'\bcourt clerk\b',
+            r'\bjudicial clerk\b',
+            r'\bsenior court clerk\b',
         ],
         'Technical Specialist': [
             r'\btechnical specialist\b',
@@ -541,6 +560,10 @@ class TitleNormalizer:
             r'\bcaregiv(er|ing)\b',
             r'\bcare giv(er|ing)\b',
             r'\bhome care (aide|worker)\b',
+            r'\bdirect care (aide|worker)\b',
+            r'\bsupport care (assistant|asst)\b',
+            r'\bsecurity support care\b',
+            r'\bresident(ial)? treatment work(er)?\b',
         ],
         'General Laborer': [
             r'\bgeneral labor(er)?\b',
@@ -559,6 +582,7 @@ class TitleNormalizer:
             r'\bcustodian\b',
             r'\bcleaning (worker|technician)\b',
             r'\bsanitation (worker|technician)\b',
+            r'\bcustodial (worker|assistant)\b',
         ],
         'Server': [
             r'\bserver\b',
@@ -600,6 +624,80 @@ class TitleNormalizer:
             r'\bsewing helper\b',
             r'\bsewing (worker|technician)\b',
             r'\btextile worker\b',
+        ],
+
+        # Phase 6 - Government/State Payroll Expansion
+        'Direct Care Worker': [
+            r'\bdirect care (worker|aide)\b',
+            r'\bsupport care (assistant|worker)\b',
+            r'\bresidential (aide|worker)\b',
+        ],
+        'Maintenance Worker': [
+            r'\bmaintenance worker\b',
+            r'\bmaintenance (technician|tech)\b',
+            r'\bsenior maintenance worker\b',
+            r'\bintermediate maintenance\b',
+            r'\bmaintenance crew\b',
+            r'\bmaintenance.?grounds\b',
+        ],
+        'Benefits Specialist': [
+            r'\bbenefit(s)? program (technician|specialist|supervisor|associate)\b',
+            r'\bincome maint(enance)? worker\b',
+            r'\beligibility (worker|specialist)\b',
+        ],
+        'Youth Services Worker': [
+            r'\byouth services worker\b',
+            r'\byouth (development|services) (rep|specialist)\b',
+        ],
+        'Program Specialist': [
+            r'\bprogram specialist\b',
+            r'\bprogram (analyst|monitor)\b',
+        ],
+        'Motor Vehicle Operator': [
+            r'\bmotor vehicle operator\b',
+            r'\bbus (driver|operator|attendant)\b',
+        ],
+        'Security Officer': [
+            r'\bsecurity (officer|guard)\b',
+            r'\btraffic control officer\b',
+        ],
+        'Parole Officer': [
+            r'\bprobation (and|&)? parole officer\b',
+            r'\bparole officer\b',
+            r'\bprobation officer\b',
+        ],
+        'Eligibility Worker': [
+            r'\beligibility (worker|interviewer|specialist)\b',
+        ],
+        'Public Defender': [
+            r'\bpublic defender\b',
+            r'\bassistant public defender\b',
+        ],
+        'Emergency Dispatcher': [
+            r'\bemergency (dispatcher|communications)\b',
+            r'\b911 (dispatcher|operator)\b',
+        ],
+        'EMT/Paramedic': [
+            r'\bemt\b',
+            r'\bparamedic\b',
+            r'\bfirefighter (emt|paramedic|tech)\b',
+            r'\bemergency medical technician\b',
+        ],
+        'Equipment Operator': [
+            r'\bequipment operator\b',
+            r'\bheavy equipment operator\b',
+            r'\bemergency maint equip operat\b',
+        ],
+        'Dietary Aide': [
+            r'\bdietary (aide|assistant)\b',
+            r'\bfood service (assistant|aide)\b',
+        ],
+        'Trades Worker': [
+            r'\bspecialized trades worker\b',
+            r'\bskilled trades\b',
+        ],
+        'Adjunct Faculty': [
+            r'\badjunct (professor|faculty|instructor)\b',
         ],
     }
 

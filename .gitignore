@@ -1,6 +1,18 @@
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.log
+unlisted_jobs/data/
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
-
-# Environment files with secrets
+Thumbs.db
 .env
 .env.local
-.env.*.local
