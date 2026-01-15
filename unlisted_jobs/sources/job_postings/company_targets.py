@@ -32,234 +32,87 @@ class CompanyTarget:
 # KNOWN ATS MAPPINGS - Companies with confirmed ATS type
 # ============================================================================
 
+# Validated: 2026-01-15 - Only includes companies with active Greenhouse boards
 GREENHOUSE_COMPANIES: Dict[str, str] = {
-    # Tech Giants & Unicorns
-    "stripe": "Stripe",
-    "airbnb": "Airbnb",
-    "figma": "Figma",
-    "notion": "Notion",
-    "doordash": "DoorDash",
-    "instacart": "Instacart",
-    "slack": "Slack",
-    "dropbox": "Dropbox",
-    "coinbase": "Coinbase",
-    "square": "Block (Square)",
-    "robinhood": "Robinhood",
-    "plaid": "Plaid",
-    "mongodb": "MongoDB",
-    "twilio": "Twilio",
-    "hashicorp": "HashiCorp",
-    "gitlab": "GitLab",
-    "airtable": "Airtable",
-    "confluent": "Confluent",
-    "datadog": "Datadog",
-    "snowflake": "Snowflake",
+    # Tech Giants & Unicorns (45 companies, ~6,900 jobs)
+    "stripe": "Stripe",              # 549 jobs
+    "airbnb": "Airbnb",              # 225 jobs
+    "figma": "Figma",                # 169 jobs
+    "instacart": "Instacart",        # 157 jobs
+    "dropbox": "Dropbox",            # 170 jobs
+    "coinbase": "Coinbase",          # 343 jobs
+    "robinhood": "Robinhood",        # 114 jobs
+    "mongodb": "MongoDB",            # 382 jobs
+    "twilio": "Twilio",              # 117 jobs
+    "gitlab": "GitLab",              # 140 jobs
+    "airtable": "Airtable",          # 49 jobs
+    "datadog": "Datadog",            # 404 jobs
 
-    # Growth Stage
-    "anthropic": "Anthropic",
-    "openai": "OpenAI",
-    "databricks": "Databricks",
-    "dbt-labs": "dbt Labs",
-    "vercel": "Vercel",
-    "supabase": "Supabase",
-    "retool": "Retool",
-    "linear": "Linear",
-    "loom": "Loom",
-    "miro": "Miro",
-    "canva": "Canva",
-    "grammarly": "Grammarly",
-    "duolingo": "Duolingo",
-    "zapier": "Zapier",
-    "webflow": "Webflow",
-    "calendly": "Calendly",
-    "intercom": "Intercom",
-    "amplitude": "Amplitude",
-    "mixpanel": "Mixpanel",
-    "segment": "Segment",
+    # Growth Stage / AI
+    "anthropic": "Anthropic",        # 326 jobs
+    "databricks": "Databricks",      # 683 jobs
+    "vercel": "Vercel",              # 75 jobs
+    "retool": "Retool",              # 2 jobs
+    "grammarly": "Grammarly",        # 78 jobs
+    "duolingo": "Duolingo",          # 53 jobs
+    "webflow": "Webflow",            # 53 jobs
+    "calendly": "Calendly",          # 13 jobs
+    "intercom": "Intercom",          # 205 jobs
+    "amplitude": "Amplitude",        # 66 jobs
+    "mixpanel": "Mixpanel",          # 33 jobs
 
     # Enterprise SaaS
-    "okta": "Okta",
-    "servicenow": "ServiceNow",
-    "pagerduty": "PagerDuty",
-    "splunk": "Splunk",
-    "newrelic": "New Relic",
-    "elastic": "Elastic",
-    "atlassian": "Atlassian",
-    "autodesk": "Autodesk",
-    "zendesk": "Zendesk",
-    "freshworks": "Freshworks",
+    "okta": "Okta",                  # 309 jobs
+    "pagerduty": "PagerDuty",        # 57 jobs
+    "newrelic": "New Relic",         # 72 jobs
+    "elastic": "Elastic",            # 191 jobs
 
     # Fintech
-    "chime": "Chime",
-    "sofi": "SoFi",
-    "marqeta": "Marqeta",
-    "checkout": "Checkout.com",
-    "wise": "Wise",
-    "klarna": "Klarna",
-    "adyen": "Adyen",
-    "revolut": "Revolut",
-    "nubank": "Nubank",
+    "chime": "Chime",                # 54 jobs
+    "sofi": "SoFi",                  # 184 jobs
+    "marqeta": "Marqeta",            # 13 jobs
+    "adyen": "Adyen",                # 239 jobs
+    "nubank": "Nubank",              # 66 jobs
 
     # E-commerce / Marketplaces
-    "etsy": "Etsy",
-    "shopify": "Shopify",
-    "wayfair": "Wayfair",
-    "chewy": "Chewy",
-    "poshmark": "Poshmark",
-    "mercari": "Mercari",
-    "offerup": "OfferUp",
-    "rover": "Rover",
+    "wayfair": "Wayfair",            # 1 job
+    "mercari": "Mercari",            # 1 job
+    "offerup": "OfferUp",            # 4 jobs
 
     # Healthcare Tech
-    "oscar": "Oscar Health",
-    "modernhealth": "Modern Health",
-    "ro": "Ro",
-    "hims": "Hims & Hers",
-    "zocdoc": "Zocdoc",
-    "cityblock": "Cityblock Health",
-    "devoted": "Devoted Health",
-    "noom": "Noom",
+    "oscar": "Oscar Health",         # 201 jobs
+    "modernhealth": "Modern Health", # 8 jobs
+    "zocdoc": "Zocdoc",              # 65 jobs
 
     # Security / Infrastructure
-    "crowdstrike": "CrowdStrike",
-    "sentinelone": "SentinelOne",
-    "snyk": "Snyk",
-    "1password": "1Password",
-    "cloudflare": "Cloudflare",
-    "fastly": "Fastly",
-    "netlify": "Netlify",
+    "cloudflare": "Cloudflare",      # 583 jobs
+    "fastly": "Fastly",              # 39 jobs
+    "netlify": "Netlify",            # 2 jobs
 
     # Real Estate / PropTech
-    "compass": "Compass",
-    "zillow": "Zillow",
-    "redfin": "Redfin",
-    "opendoor": "Opendoor",
-    "offerpad": "Offerpad",
+    "opendoor": "Opendoor",          # 45 jobs
 
     # Transportation / Mobility
-    "bird": "Bird",
-    "lime": "Lime",
-    "getaround": "Getaround",
-    "turo": "Turo",
+    "bird": "Bird",                  # 28 jobs
 
     # Media / Entertainment
-    "roblox": "Roblox",
-    "discord": "Discord",
-    "niantic": "Niantic",
-    "epic-games": "Epic Games",
-    "unity": "Unity",
+    "roblox": "Roblox",              # 235 jobs
+    "discord": "Discord",            # 69 jobs
 }
 
+# Validated: 2026-01-15 - Most companies have moved away from Lever
+# Only 2 of 51 original companies still use Lever
 LEVER_COMPANIES: Dict[str, str] = {
-    # Major Tech
-    "netflix": "Netflix",
-    "github": "GitHub",
-    "twitch": "Twitch",
-    "lyft": "Lyft",
-    "reddit": "Reddit",
-    "spotify": "Spotify",
-
-    # Growth Stage
-    "gusto": "Gusto",
-    "asana": "Asana",
-    "flexport": "Flexport",
-    "rippling": "Rippling",
-    "brex": "Brex",
-    "affirm": "Affirm",
-    "scale": "Scale AI",
-    "anduril": "Anduril Industries",
-    "ramp": "Ramp",
-
-    # More Growth Companies
-    "deel": "Deel",
-    "remote": "Remote",
-    "lattice": "Lattice",
-    "carta": "Carta",
-    "mercury": "Mercury",
-    "productboard": "Productboard",
-    "contentful": "Contentful",
-    "snorkel": "Snorkel AI",
-    "weights-and-biases": "Weights & Biases",
-    "cohere": "Cohere",
-    "adept": "Adept",
-    "mistral": "Mistral AI",
-    "runway": "Runway",
-    "midjourney": "Midjourney",
-
-    # Fintech
-    "wealthfront": "Wealthfront",
-    "betterment": "Betterment",
-    "current": "Current",
-    "dave": "Dave",
-    "varo": "Varo",
-    "upgrade": "Upgrade",
-    "monzo": "Monzo",
-    "starling": "Starling Bank",
-
-    # Enterprise
-    "samsara": "Samsara",
-    "figma": "Figma",
-    "notion": "Notion",
-    "loom": "Loom",
-    "descript": "Descript",
-    "jasper": "Jasper",
-
-    # Healthcare
-    "cerebral": "Cerebral",
-    "hinge-health": "Hinge Health",
-    "headspace": "Headspace",
-    "calm": "Calm",
-
-    # Other
-    "nextdoor": "Nextdoor",
-    "thumbtack": "Thumbtack",
-    "taskrabbit": "TaskRabbit",
-    "postmates": "Postmates",
+    "spotify": "Spotify",            # 137 jobs
+    "wealthfront": "Wealthfront",    # 11 jobs
 }
 
+# Validated: 2026-01-15 - Most large companies use regional/localized portals
+# Only 3 of 33 return jobs via public API
 SMARTRECRUITERS_COMPANIES: Dict[str, str] = {
-    # Enterprise
-    "Visa": "Visa",
-    "BOSCH": "Bosch",
-    "LinkedIn": "LinkedIn",
-    "McDonalds": "McDonald's",
-    "IKEA": "IKEA",
-    "Adidas": "Adidas",
-    "Spotify": "Spotify",
-    "Wayfair": "Wayfair",
-    "eBay": "eBay",
-    "Equinix": "Equinix",
-
-    # Consulting / Services
-    "Capgemini": "Capgemini",
-    "Infosys": "Infosys",
-    "TCS": "Tata Consultancy Services",
-    "Cognizant": "Cognizant",
-    "Wipro": "Wipro",
-    "HCL": "HCL Technologies",
-    "LTIMindtree": "LTIMindtree",
-
-    # Manufacturing / Industrial
-    "PTC": "PTC",
-    "SiemensEnergyGlobal": "Siemens Energy",
-    "ABB": "ABB",
-    "Honeywell": "Honeywell",
-    "Schneider-Electric": "Schneider Electric",
-
-    # Retail / Consumer
-    "Gap": "Gap Inc.",
-    "Levis": "Levi Strauss",
-    "UnderArmour": "Under Armour",
-    "Crocs": "Crocs",
-    "Sephora": "Sephora",
-    "LVMH": "LVMH",
-
-    # Pharma / Healthcare
-    "Novartis": "Novartis",
-    "Roche": "Roche",
-    "AstraZeneca": "AstraZeneca",
-    "BristolMyersSquibb": "Bristol-Myers Squibb",
-    "Pfizer": "Pfizer",
+    "Visa": "Visa",                  # 1,172 jobs
+    "Wayfair": "Wayfair",            # 1 job (also on Greenhouse)
+    "LVMH": "LVMH",                  # 4 jobs
 }
 
 WORKDAY_COMPANIES: Dict[Tuple[str, str, str], str] = {
