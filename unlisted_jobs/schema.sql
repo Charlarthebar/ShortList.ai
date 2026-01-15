@@ -638,22 +638,151 @@ ORDER BY estimated_total_employment DESC;
 -- INITIAL SEED DATA
 -- ============================================================================
 
+-- ============================================================================
+-- LICENSED PROFESSIONALS TABLE (NPI, Bar, Teachers, Trades)
+-- ============================================================================
+
+-- Licensed professionals from regulatory databases
+CREATE TABLE IF NOT EXISTS licensed_professionals (
+    id BIGSERIAL PRIMARY KEY,
+
+    -- License info
+    license_type TEXT NOT NULL,  -- npi/bar/teacher/electrician/plumber/real_estate
+    license_number TEXT NOT NULL,
+    state TEXT NOT NULL,
+
+    -- Person info
+    first_name TEXT,
+    last_name TEXT,
+    credential TEXT,  -- MD, RN, JD, etc.
+
+    -- Professional info
+    raw_title TEXT,  -- Job title/specialty
+    taxonomy_code TEXT,  -- NPI taxonomy or equivalent
+    employer_name TEXT,
+    employer_city TEXT,
+    employer_state TEXT,
+
+    -- Status
+    license_status TEXT,  -- active/inactive/expired
+    issue_date DATE,
+    expiration_date DATE,
+
+    -- Source and provenance
+    source TEXT NOT NULL,
+    source_url TEXT,
+    source_document_id TEXT,
+
+    -- Confidence
+    confidence_score REAL DEFAULT 0.90,
+
+    -- Metadata
+    raw_data JSONB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    -- Unique constraint
+    UNIQUE(license_type, license_number, state)
+);
+
+CREATE INDEX idx_licensed_prof_type ON licensed_professionals(license_type);
+CREATE INDEX idx_licensed_prof_state ON licensed_professionals(state);
+CREATE INDEX idx_licensed_prof_employer ON licensed_professionals(employer_name);
+CREATE INDEX idx_licensed_prof_title ON licensed_professionals(raw_title);
+
+
+-- ============================================================================
+-- COMPANY HEADCOUNTS TABLE (from SEC, 990, news)
+-- ============================================================================
+
+-- Company employee counts from various sources
+CREATE TABLE IF NOT EXISTS company_headcounts (
+    id BIGSERIAL PRIMARY KEY,
+
+    -- Company identifiers
+    company_id INTEGER REFERENCES companies(id),
+    company_name TEXT NOT NULL,
+    ein TEXT,  -- Employer ID (nonprofits)
+    cik TEXT,  -- SEC CIK (public companies)
+
+    -- Headcount data
+    employee_count INTEGER NOT NULL,
+    employee_count_is_estimate BOOLEAN DEFAULT FALSE,
+
+    -- Context
+    fiscal_year INTEGER,
+    fiscal_period TEXT,  -- Q1/Q2/Q3/Q4/FY
+    geography TEXT,  -- US/Global/specific state
+
+    -- Source and provenance
+    source TEXT NOT NULL,  -- sec_10k/propublica_990/news/website
+    source_url TEXT,
+    source_document_id TEXT,
+    as_of_date DATE,
+
+    -- Confidence
+    confidence_score REAL DEFAULT 0.80,
+
+    -- Metadata
+    raw_data JSONB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    -- Unique constraint
+    UNIQUE(company_name, fiscal_year, source)
+);
+
+CREATE INDEX idx_headcounts_company ON company_headcounts(company_id);
+CREATE INDEX idx_headcounts_ein ON company_headcounts(ein);
+CREATE INDEX idx_headcounts_name ON company_headcounts(company_name);
+CREATE INDEX idx_headcounts_year ON company_headcounts(fiscal_year);
+
+
+-- ============================================================================
+-- INITIAL SEED DATA
+-- ============================================================================
+
 -- Insert source types
 INSERT INTO sources (name, type, reliability_tier, base_reliability, is_active) VALUES
+-- Tier A: Government Payroll
 ('state_payroll', 'payroll', 'A', 0.95, TRUE),
+('ma_state_payroll', 'payroll', 'A', 0.95, TRUE),
+('boston_payroll', 'payroll', 'A', 0.95, TRUE),
+('cambridge_payroll', 'payroll', 'A', 0.95, TRUE),
+('federal_opm', 'payroll', 'A', 0.95, TRUE),
 ('university_payroll', 'payroll', 'A', 0.95, TRUE),
 ('hospital_payroll', 'payroll', 'A', 0.95, TRUE),
-('cba_pay_table', 'cba', 'A', 0.90, TRUE),
+
+-- Tier A: Visa Data
 ('h1b_visa', 'visa', 'A', 0.85, TRUE),
 ('perm_visa', 'visa', 'A', 0.85, TRUE),
+
+-- Tier A: Licensed Professionals
+('npi_registry', 'license', 'A', 0.90, TRUE),
+('ma_bar', 'license', 'A', 0.90, TRUE),
+('ma_teacher', 'license', 'A', 0.85, TRUE),
+('ma_trades', 'license', 'A', 0.85, TRUE),
+
+-- Tier A: Union/CBA
+('cba_pay_table', 'cba', 'A', 0.90, TRUE),
+
+-- Tier B: Nonprofits
+('propublica_990', 'nonprofit', 'B', 0.80, TRUE),
 ('irs_990', 'nonprofit', 'B', 0.75, TRUE),
+
+-- Tier B: Job Postings
 ('indeed_observed', 'posting', 'B', 0.70, TRUE),
 ('linkedin_observed', 'posting', 'B', 0.70, TRUE),
 ('greenhouse_ats', 'posting', 'B', 0.75, TRUE),
+('adzuna', 'posting', 'B', 0.70, TRUE),
+
+-- Tier B: Inferred
 ('posting_disappeared', 'posting_lifecycle', 'B', 0.60, TRUE),
+
+-- Tier C: Directories and Macro
 ('company_directory', 'directory', 'C', 0.50, TRUE),
 ('oews_macro', 'macro', 'C', 0.40, TRUE),
-('qcew_macro', 'macro', 'C', 0.40, TRUE)
+('qcew_macro', 'macro', 'C', 0.40, TRUE),
+('bls_oews', 'macro', 'C', 0.40, TRUE)
 ON CONFLICT (name) DO NOTHING;
 
 -- Insert seniority levels as a reference

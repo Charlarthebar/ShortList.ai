@@ -1,0 +1,121 @@
+organization_name,ein,city,state,position_title,compensation,is_officer,filing_year,total_employees,inferred_count,confidence_override
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Executive Director / CEO,,True,2023,13000,,
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Chief Financial Officer,,True,2023,13000,,
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Chief Operating Officer,,True,2023,13000,,
+Massachusetts Institute of Technology,042103594,Cambridge,MA,General Counsel,,True,2023,13000,,
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Chief Medical Officer,,True,2023,13000,,
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Chief Human Resources Officer,,True,2023,13000,,
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Vice President,,True,2023,13000,,
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Manager/Director (650 positions),,False,2023,13000,650.0,0.6
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Professional Staff (5200 positions),,False,2023,13000,5200.0,0.5
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Administrative Staff (2600 positions),,False,2023,13000,2600.0,0.4
+Massachusetts Institute of Technology,042103594,Cambridge,MA,Support Staff (4550 positions),,False,2023,13000,4550.0,0.3
+Harvard University,042103580,Cambridge,MA,Executive Director / CEO,,True,2023,20000,,
+Harvard University,042103580,Cambridge,MA,Chief Financial Officer,,True,2023,20000,,
+Harvard University,042103580,Cambridge,MA,Chief Operating Officer,,True,2023,20000,,
+Harvard University,042103580,Cambridge,MA,General Counsel,,True,2023,20000,,
+Harvard University,042103580,Cambridge,MA,Chief Medical Officer,,True,2023,20000,,
+Harvard University,042103580,Cambridge,MA,Chief Human Resources Officer,,True,2023,20000,,
+Harvard University,042103580,Cambridge,MA,Vice President,,True,2023,20000,,
+Harvard University,042103580,Cambridge,MA,Manager/Director (1000 positions),,False,2023,20000,1000.0,0.6
+Harvard University,042103580,Cambridge,MA,Professional Staff (8000 positions),,False,2023,20000,8000.0,0.5
+Harvard University,042103580,Cambridge,MA,Administrative Staff (4000 positions),,False,2023,20000,4000.0,0.4
+Harvard University,042103580,Cambridge,MA,Support Staff (7000 positions),,False,2023,20000,7000.0,0.3
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Executive Director / CEO,,True,2023,80000,,
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Chief Financial Officer,,True,2023,80000,,
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Chief Operating Officer,,True,2023,80000,,
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,General Counsel,,True,2023,80000,,
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Chief Medical Officer,,True,2023,80000,,
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Chief Human Resources Officer,,True,2023,80000,,
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Vice President,,True,2023,80000,,
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Manager/Director (4000 positions),,False,2023,80000,4000.0,0.6
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Professional Staff (32000 positions),,False,2023,80000,32000.0,0.5
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Administrative Staff (16000 positions),,False,2023,80000,16000.0,0.4
+Partners Healthcare System (Mass General Brigham),043230035,Somerville,MA,Support Staff (28000 positions),,False,2023,80000,28000.0,0.3
+Boston Children's Hospital,042774441,Boston,MA,Executive Director / CEO,,True,2023,12000,,
+Boston Children's Hospital,042774441,Boston,MA,Chief Financial Officer,,True,2023,12000,,
+Boston Children's Hospital,042774441,Boston,MA,Chief Operating Officer,,True,2023,12000,,
+Boston Children's Hospital,042774441,Boston,MA,General Counsel,,True,2023,12000,,
+Boston Children's Hospital,042774441,Boston,MA,Chief Medical Officer,,True,2023,12000,,
+Boston Children's Hospital,042774441,Boston,MA,Chief Human Resources Officer,,True,2023,12000,,
+Boston Children's Hospital,042774441,Boston,MA,Vice President,,True,2023,12000,,
+Boston Children's Hospital,042774441,Boston,MA,Manager/Director (600 positions),,False,2023,12000,600.0,0.6
+Boston Children's Hospital,042774441,Boston,MA,Professional Staff (4800 positions),,False,2023,12000,4800.0,0.5
+Boston Children's Hospital,042774441,Boston,MA,Administrative Staff (2400 positions),,False,2023,12000,2400.0,0.4
+Boston Children's Hospital,042774441,Boston,MA,Support Staff (4200 positions),,False,2023,12000,4200.0,0.3
+Dana-Farber Cancer Institute,042263040,Boston,MA,Executive Director / CEO,,True,2023,5000,,
+Dana-Farber Cancer Institute,042263040,Boston,MA,Chief Financial Officer,,True,2023,5000,,
+Dana-Farber Cancer Institute,042263040,Boston,MA,Chief Operating Officer,,True,2023,5000,,
+Dana-Farber Cancer Institute,042263040,Boston,MA,General Counsel,,True,2023,5000,,
+Dana-Farber Cancer Institute,042263040,Boston,MA,Chief Medical Officer,,True,2023,5000,,
+Dana-Farber Cancer Institute,042263040,Boston,MA,Chief Human Resources Officer,,True,2023,5000,,
+Dana-Farber Cancer Institute,042263040,Boston,MA,Vice President,,True,2023,5000,,
+Dana-Farber Cancer Institute,042263040,Boston,MA,Manager/Director (250 positions),,False,2023,5000,250.0,0.6
+Dana-Farber Cancer Institute,042263040,Boston,MA,Professional Staff (2000 positions),,False,2023,5000,2000.0,0.5
+Dana-Farber Cancer Institute,042263040,Boston,MA,Administrative Staff (1000 positions),,False,2023,5000,1000.0,0.4
+Dana-Farber Cancer Institute,042263040,Boston,MA,Support Staff (1750 positions),,False,2023,5000,1750.0,0.3
+Mount Auburn Hospital,042103634,Medford,MA,Executive Director / CEO,,True,2023,2500,,
+Mount Auburn Hospital,042103634,Medford,MA,Chief Financial Officer,,True,2023,2500,,
+Mount Auburn Hospital,042103634,Medford,MA,Chief Operating Officer,,True,2023,2500,,
+Mount Auburn Hospital,042103634,Medford,MA,General Counsel,,True,2023,2500,,
+Mount Auburn Hospital,042103634,Medford,MA,Chief Medical Officer,,True,2023,2500,,
+Mount Auburn Hospital,042103634,Medford,MA,Chief Human Resources Officer,,True,2023,2500,,
+Mount Auburn Hospital,042103634,Medford,MA,Manager/Director (125 positions),,False,2023,2500,125.0,0.6
+Mount Auburn Hospital,042103634,Medford,MA,Professional Staff (1000 positions),,False,2023,2500,1000.0,0.5
+Mount Auburn Hospital,042103634,Medford,MA,Administrative Staff (500 positions),,False,2023,2500,500.0,0.4
+Mount Auburn Hospital,042103634,Medford,MA,Support Staff (875 positions),,False,2023,2500,875.0,0.3
+Lahey Hospital & Medical Center,042103587,Medford,MA,Executive Director / CEO,,True,2023,4000,,
+Lahey Hospital & Medical Center,042103587,Medford,MA,Chief Financial Officer,,True,2023,4000,,
+Lahey Hospital & Medical Center,042103587,Medford,MA,Chief Operating Officer,,True,2023,4000,,
+Lahey Hospital & Medical Center,042103587,Medford,MA,General Counsel,,True,2023,4000,,
+Lahey Hospital & Medical Center,042103587,Medford,MA,Chief Medical Officer,,True,2023,4000,,
+Lahey Hospital & Medical Center,042103587,Medford,MA,Chief Human Resources Officer,,True,2023,4000,,
+Lahey Hospital & Medical Center,042103587,Medford,MA,Vice President,,True,2023,4000,,
+Lahey Hospital & Medical Center,042103587,Medford,MA,Manager/Director (200 positions),,False,2023,4000,200.0,0.6
+Lahey Hospital & Medical Center,042103587,Medford,MA,Professional Staff (1600 positions),,False,2023,4000,1600.0,0.5
+Lahey Hospital & Medical Center,042103587,Medford,MA,Administrative Staff (800 positions),,False,2023,4000,800.0,0.4
+Lahey Hospital & Medical Center,042103587,Medford,MA,Support Staff (1400 positions),,False,2023,4000,1400.0,0.3
+WGBH Educational Foundation,042104397,Brighton,MA,Executive Director / CEO,,True,2023,500,,
+WGBH Educational Foundation,042104397,Brighton,MA,Chief Financial Officer,,True,2023,500,,
+WGBH Educational Foundation,042104397,Brighton,MA,Manager/Director (25 positions),,False,2023,500,25.0,0.6
+WGBH Educational Foundation,042104397,Brighton,MA,Professional Staff (200 positions),,False,2023,500,200.0,0.5
+WGBH Educational Foundation,042104397,Brighton,MA,Administrative Staff (100 positions),,False,2023,500,100.0,0.4
+WGBH Educational Foundation,042104397,Brighton,MA,Support Staff (175 positions),,False,2023,500,175.0,0.3
+Cybertrust Massachusetts,921084175,Rochester,MA,Executive Director / CEO,,True,2023,0,,
+Cybertrust Massachusetts,921084175,Rochester,MA,Chief Financial Officer,,True,2023,0,,
+Arc Massachusetts,42223502,Waltham,MA,Executive Director / CEO,,True,2023,0,,
+Arc Massachusetts,42223502,Waltham,MA,Chief Financial Officer,,True,2023,0,,
+Naiop Massachusetts Inc,42771582,Needham,MA,Executive Director / CEO,,True,2023,0,,
+Naiop Massachusetts Inc,42771582,Needham,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Teachers Association,510173054,Worcester,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Teachers Association,510173054,Worcester,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Medical Society,42050773,Waltham,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Medical Society,42050773,Waltham,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Legal Assistance,42790762,Boston,MA,Executive Director / CEO,,True,2024,0,,
+Massachusetts Legal Assistance,42790762,Boston,MA,Chief Financial Officer,,True,2024,0,,
+Massachusetts Teachers Association,41591200,Quincy,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Teachers Association,41591200,Quincy,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Nurses Association,41591164,Canton,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Nurses Association,41591164,Canton,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Dental Society,41590155,Southborough,MA,Executive Director / CEO,,True,2024,0,,
+Massachusetts Dental Society,41590155,Southborough,MA,Chief Financial Officer,,True,2024,0,,
+Massachusetts Historical Society,42108374,Boston,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Historical Society,42108374,Boston,MA,Chief Financial Officer,,True,2023,0,,
+Philanthropy Massachusetts Inc,42457605,Boston,MA,Executive Director / CEO,,True,2023,0,,
+Philanthropy Massachusetts Inc,42457605,Boston,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Biomedical Initiatives,222636406,Worcester,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Biomedical Initiatives,222636406,Worcester,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Higher Education,42829767,Hadley,MA,Executive Director / CEO,,True,2024,0,,
+Massachusetts Higher Education,42829767,Hadley,MA,Chief Financial Officer,,True,2024,0,,
+Massachusetts Wonderfund Inc,43443890,Newton,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Wonderfund Inc,43443890,Newton,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Bar Association,41589785,Boston,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Bar Association,41589785,Boston,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Horticultural Society,42104714,Wellesley,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Horticultural Society,42104714,Wellesley,MA,Chief Financial Officer,,True,2023,0,,
+Central Massachusetts Area,42775264,Worcester,MA,Executive Director / CEO,,True,2023,0,,
+Central Massachusetts Area,42775264,Worcester,MA,Chief Financial Officer,,True,2023,0,,
+Kipp Massachusetts Inc,464881350,Lynn,MA,Executive Director / CEO,,True,2023,0,,
+Kipp Massachusetts Inc,464881350,Lynn,MA,Chief Financial Officer,,True,2023,0,,
+Massachusetts Hockey Inc,43130566,Duxbury,MA,Executive Director / CEO,,True,2023,0,,
+Massachusetts Hockey Inc,43130566,Duxbury,MA,Chief Financial Officer,,True,2023,0,,

@@ -544,6 +544,188 @@ class DatabaseManager:
             self.release_connection(conn)
 
     # ========================================================================
+    # Licensed Professionals (NPI, Bar, Teachers, Trades)
+    # ========================================================================
+
+    def insert_licensed_professional(self, prof_data: Dict[str, Any]) -> int:
+        """
+        Insert a licensed professional record.
+
+        Used for NPI healthcare providers, attorneys, teachers, trades, etc.
+        """
+        conn = self.get_connection()
+        try:
+            with conn.cursor() as cursor:
+                cursor.execute("""
+                    INSERT INTO licensed_professionals (
+                        license_type, license_number, state,
+                        first_name, last_name, credential,
+                        raw_title, taxonomy_code,
+                        employer_name, employer_city, employer_state,
+                        license_status, issue_date, expiration_date,
+                        source, source_url, source_document_id,
+                        confidence_score, raw_data
+                    ) VALUES (
+                        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+                    )
+                    ON CONFLICT (license_type, license_number, state) DO UPDATE SET
+                        raw_title = EXCLUDED.raw_title,
+                        employer_name = EXCLUDED.employer_name,
+                        license_status = EXCLUDED.license_status,
+                        updated_at = CURRENT_TIMESTAMP
+                    RETURNING id
+                """, (
+                    prof_data['license_type'],
+                    prof_data['license_number'],
+                    prof_data['state'],
+                    prof_data.get('first_name'),
+                    prof_data.get('last_name'),
+                    prof_data.get('credential'),
+                    prof_data.get('raw_title'),
+                    prof_data.get('taxonomy_code'),
+                    prof_data.get('employer_name'),
+                    prof_data.get('employer_city'),
+                    prof_data.get('employer_state'),
+                    prof_data.get('license_status', 'active'),
+                    prof_data.get('issue_date'),
+                    prof_data.get('expiration_date'),
+                    prof_data['source'],
+                    prof_data.get('source_url'),
+                    prof_data.get('source_document_id'),
+                    prof_data.get('confidence_score', 0.90),
+                    Json(prof_data.get('raw_data', {}))
+                ))
+                prof_id = cursor.fetchone()[0]
+                conn.commit()
+                return prof_id
+        except Exception as e:
+            conn.rollback()
+            logger.error(f"Error inserting licensed professional: {e}")
+            raise
+        finally:
+            self.release_connection(conn)
+
+    def batch_insert_licensed_professionals(self, professionals: List[Dict[str, Any]]) -> int:
+        """Batch insert licensed professionals for efficiency."""
+        conn = self.get_connection()
+        try:
+            with conn.cursor() as cursor:
+                query = """
+                    INSERT INTO licensed_professionals (
+                        license_type, license_number, state,
+                        first_name, last_name, credential,
+                        raw_title, taxonomy_code,
+                        employer_name, employer_city, employer_state,
+                        license_status, issue_date, expiration_date,
+                        source, source_url, source_document_id,
+                        confidence_score, raw_data
+                    ) VALUES (
+                        %(license_type)s, %(license_number)s, %(state)s,
+                        %(first_name)s, %(last_name)s, %(credential)s,
+                        %(raw_title)s, %(taxonomy_code)s,
+                        %(employer_name)s, %(employer_city)s, %(employer_state)s,
+                        %(license_status)s, %(issue_date)s, %(expiration_date)s,
+                        %(source)s, %(source_url)s, %(source_document_id)s,
+                        %(confidence_score)s, %(raw_data)s
+                    )
+                    ON CONFLICT (license_type, license_number, state) DO UPDATE SET
+                        raw_title = EXCLUDED.raw_title,
+                        employer_name = EXCLUDED.employer_name,
+                        license_status = EXCLUDED.license_status,
+                        updated_at = CURRENT_TIMESTAMP
+                """
+                # Prepare data with defaults
+                prepared = []
+                for p in professionals:
+                    prepared.append({
+                        'license_type': p['license_type'],
+                        'license_number': p['license_number'],
+                        'state': p['state'],
+                        'first_name': p.get('first_name'),
+                        'last_name': p.get('last_name'),
+                        'credential': p.get('credential'),
+                        'raw_title': p.get('raw_title'),
+                        'taxonomy_code': p.get('taxonomy_code'),
+                        'employer_name': p.get('employer_name'),
+                        'employer_city': p.get('employer_city'),
+                        'employer_state': p.get('employer_state'),
+                        'license_status': p.get('license_status', 'active'),
+                        'issue_date': p.get('issue_date'),
+                        'expiration_date': p.get('expiration_date'),
+                        'source': p['source'],
+                        'source_url': p.get('source_url'),
+                        'source_document_id': p.get('source_document_id'),
+                        'confidence_score': p.get('confidence_score', 0.90),
+                        'raw_data': Json(p.get('raw_data', {}))
+                    })
+
+                execute_batch(cursor, query, prepared, page_size=1000)
+                conn.commit()
+                logger.info(f"Batch inserted {len(professionals)} licensed professionals")
+                return len(professionals)
+        except Exception as e:
+            conn.rollback()
+            logger.error(f"Error batch inserting licensed professionals: {e}")
+            raise
+        finally:
+            self.release_connection(conn)
+
+    # ========================================================================
+    # Company Headcounts (from SEC, 990, etc.)
+    # ========================================================================
+
+    def insert_company_headcount(self, headcount_data: Dict[str, Any]) -> int:
+        """
+        Insert a company headcount observation.
+
+        Used for employee counts from 990 filings, SEC 10-K, news, etc.
+        """
+        conn = self.get_connection()
+        try:
+            with conn.cursor() as cursor:
+                cursor.execute("""
+                    INSERT INTO company_headcounts (
+                        company_id, company_name, ein, cik,
+                        employee_count, employee_count_is_estimate,
+                        fiscal_year, fiscal_period, geography,
+                        source, source_url, source_document_id, as_of_date,
+                        confidence_score, raw_data
+                    ) VALUES (
+                        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+                    )
+                    ON CONFLICT (company_name, fiscal_year, source) DO UPDATE SET
+                        employee_count = EXCLUDED.employee_count,
+                        as_of_date = EXCLUDED.as_of_date,
+                        raw_data = EXCLUDED.raw_data
+                    RETURNING id
+                """, (
+                    headcount_data.get('company_id'),
+                    headcount_data['company_name'],
+                    headcount_data.get('ein'),
+                    headcount_data.get('cik'),
+                    headcount_data['employee_count'],
+                    headcount_data.get('employee_count_is_estimate', False),
+                    headcount_data.get('fiscal_year'),
+                    headcount_data.get('fiscal_period'),
+                    headcount_data.get('geography', 'US'),
+                    headcount_data['source'],
+                    headcount_data.get('source_url'),
+                    headcount_data.get('source_document_id'),
+                    headcount_data.get('as_of_date', date.today()),
+                    headcount_data.get('confidence_score', 0.80),
+                    Json(headcount_data.get('raw_data', {}))
+                ))
+                headcount_id = cursor.fetchone()[0]
+                conn.commit()
+                return headcount_id
+        except Exception as e:
+            conn.rollback()
+            logger.error(f"Error inserting company headcount: {e}")
+            raise
+        finally:
+            self.release_connection(conn)
+
+    # ========================================================================
     # Query Methods
     # ========================================================================
 

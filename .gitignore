@@ -16,3 +16,14 @@ unlisted_jobs/data/
 Thumbs.db
 .env
 .env.local
+
+# Large data files (can be regenerated)
+data/ma_jobs/ma_jobs_comprehensive.csv
+data/ma_jobs/npi_healthcare_ma.csv
+data/ma_jobs/all_ma_jobs.csv
+data/ma_jobs/all_ma_jobs_final.csv
+data/ma_jobs/all_ma_jobs_unified.csv
+data/ma_jobs/ma_state_payroll.csv
+data/ma_jobs/inferred_jobs_expanded.csv
+unlisted_jobs/data/npi_bulk_national.csv
+data/ma_jobs/all_ma_jobs.json

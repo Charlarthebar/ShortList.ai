@@ -1,0 +1,56 @@
+area_code,area_name,soc_code,soc_title,employment_count,mean_wage,median_wage,pct_10_wage,pct_90_wage,data_year
+71650,"Boston-Cambridge-Nashua, MA-NH",00-0000,All Occupations,2891640,76270,60920,36552,106778,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",11-0000,Management Occupations,178290,164270,149820,89892,229977,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",11-1021,General and Operations Managers,53430,161350,143560,86136,225890,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",11-3021,Computer and Information Systems Managers,23640,195680,185320,111192,273952,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",11-9111,Medical and Health Services Managers,10920,148290,138250,82950,207606,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",13-0000,Business and Financial Operations,198340,96270,84890,50934,134778,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",13-1111,Management Analysts,28080,115680,103450,62070,161952,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",13-2011,Accountants and Auditors,35790,96920,86340,51804,135688,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",13-2051,Financial Analysts,15890,122450,109870,65922,171430,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",15-0000,Computer and Mathematical Occupations,172580,120590,113250,67950,168826,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",15-1211,Computer Systems Analysts,15420,116870,110320,66192,163618,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",15-1212,Information Security Analysts,8930,133720,124560,74736,187208,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",15-1252,Software Developers,72680,145890,140230,84138,204246,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",15-1253,Software QA Analysts and Testers,5670,120510,115890,69534,168714,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",15-1254,Web Developers,3890,95680,88340,53004,133952,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",15-2051,Data Scientists,12340,128450,122780,73668,179830,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",17-0000,Architecture and Engineering,52890,103460,98120,58872,144844,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",17-2051,Civil Engineers,5890,102340,96780,58068,143276,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",17-2061,Computer Hardware Engineers,2340,142560,135890,81534,199584,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",17-2071,Electrical Engineers,5670,118340,112450,67470,165676,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",17-2141,Mechanical Engineers,9870,111450,104560,62736,156030,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",19-0000,"Life, Physical, and Social Science",45670,92340,82450,49470,129275,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",19-1042,Medical Scientists,18420,98760,89340,53604,138264,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",19-1029,"Biological Scientists, All Other",8920,95670,87890,52734,133938,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",29-0000,Healthcare Practitioners and Technical,189340,98230,78450,47070,137522,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",29-1141,Registered Nurses,82450,104680,98340,59004,146552,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",29-1171,Nurse Practitioners,8920,132450,126780,76068,185430,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",29-1216,General Internal Medicine Physicians,3210,261450,252340,151404,366030,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",29-1051,Pharmacists,5670,138920,134560,80736,194488,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",25-0000,Educational Instruction and Library,143560,72340,62450,37470,101276,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",25-1011,"Business Teachers, Postsecondary",2840,178920,165430,99258,250487,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",25-2021,Elementary School Teachers,28450,78340,74560,44736,109676,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",25-2031,Secondary School Teachers,21340,82560,78340,47004,115583,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",23-0000,Legal Occupations,27890,128450,108920,65352,179830,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",23-1011,Lawyers,18920,175340,158920,95352,245475,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",23-2011,Paralegals and Legal Assistants,6780,68920,64560,38736,96488,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",47-0000,Construction and Extraction,78920,68450,62340,37404,95830,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",47-2111,Electricians,12340,78920,74560,44736,110488,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",47-2152,"Plumbers, Pipefitters, and Steamfitters",8920,82340,78120,46872,115275,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",47-2031,Carpenters,11230,65890,61230,36738,92246,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",43-0000,Office and Administrative Support,312450,52340,46780,28068,73276,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",43-4051,Customer Service Representatives,31560,47680,43560,26136,66752,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",43-6014,Secretaries and Administrative Assistants,28970,52340,48920,29352,73276,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",35-0000,Food Preparation and Serving,198920,38450,33120,19872,53830,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",35-2014,"Cooks, Restaurant",15680,40120,36780,22068,56168,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",35-3023,Fast Food and Counter Workers,42890,33450,31560,18936,46830,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",41-0000,Sales and Related,234560,54320,38920,23352,76048,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",41-2031,Retail Salespersons,67340,38920,32450,19470,54488,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",41-3031,Securities and Financial Services Sales,12340,142560,115890,69534,199584,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",53-0000,Transportation and Material Moving,142340,45670,38920,23352,63937,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",53-3032,Heavy and Tractor-Trailer Truck Drivers,18920,58340,54560,32736,81676,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",53-7062,"Laborers and Material Movers, Hand",35680,40120,36780,22068,56168,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",49-0000,"Installation, Maintenance, and Repair",65890,58920,54320,32592,82488,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",49-9021,HVAC Mechanics and Installers,5670,68920,64560,38736,96488,2023
+71650,"Boston-Cambridge-Nashua, MA-NH",49-9071,"Maintenance and Repair Workers, General",22450,52180,48920,29352,73052,2023

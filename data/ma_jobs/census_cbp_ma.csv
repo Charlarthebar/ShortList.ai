@@ -1,0 +1,160 @@
+naics_code,naics_label,industry,size_class,size_label,size_min,size_max,size_midpoint,num_establishments,total_employment
+11,"Agriculture, forestry, fishing and hunting",agriculture,210,<5 employees,1,4,2.5,273,353
+11,"Agriculture, forestry, fishing and hunting",agriculture,220,5-9 employees,5,9,7.0,39,247
+11,"Agriculture, forestry, fishing and hunting",agriculture,230,10-19 employees,10,19,15.0,21,259
+11,"Agriculture, forestry, fishing and hunting",agriculture,241,20-49 employees,20,49,35.0,7,226
+21,"Mining, quarrying, and oil and gas extraction",mining,210,<5 employees,1,4,2.5,36,70
+21,"Mining, quarrying, and oil and gas extraction",mining,220,5-9 employees,5,9,7.0,20,126
+21,"Mining, quarrying, and oil and gas extraction",mining,230,10-19 employees,10,19,15.0,16,243
+21,"Mining, quarrying, and oil and gas extraction",mining,241,20-49 employees,20,49,35.0,12,337
+22,Utilities,utilities,210,<5 employees,1,4,2.5,118,177
+22,Utilities,utilities,220,5-9 employees,5,9,7.0,34,230
+22,Utilities,utilities,230,10-19 employees,10,19,15.0,54,727
+22,Utilities,utilities,241,20-49 employees,20,49,35.0,55,1594
+22,Utilities,utilities,242,50-99 employees,50,99,75.0,33,2209
+22,Utilities,utilities,251,100-249 employees,100,249,175.0,27,4083
+22,Utilities,utilities,252,250-499 employees,250,499,375.0,3,1031
+22,Utilities,utilities,254,500-999 employees,500,999,750.0,3,1938
+23,Construction,construction,210,<5 employees,1,4,2.5,15465,24029
+23,Construction,construction,220,5-9 employees,5,9,7.0,3129,20251
+23,Construction,construction,230,10-19 employees,10,19,15.0,1556,20759
+23,Construction,construction,241,20-49 employees,20,49,35.0,925,27882
+23,Construction,construction,242,50-99 employees,50,99,75.0,315,21371
+23,Construction,construction,251,100-249 employees,100,249,175.0,186,27204
+23,Construction,construction,252,250-499 employees,250,499,375.0,47,15886
+23,Construction,construction,254,500-999 employees,500,999,750.0,7,5145
+31-33,Manufacturing,manufacturing,210,<5 employees,1,4,2.5,2041,3954
+31-33,Manufacturing,manufacturing,220,5-9 employees,5,9,7.0,1035,6975
+31-33,Manufacturing,manufacturing,230,10-19 employees,10,19,15.0,878,12214
+31-33,Manufacturing,manufacturing,241,20-49 employees,20,49,35.0,970,30698
+31-33,Manufacturing,manufacturing,242,50-99 employees,50,99,75.0,483,34196
+31-33,Manufacturing,manufacturing,251,100-249 employees,100,249,175.0,358,54283
+31-33,Manufacturing,manufacturing,252,250-499 employees,250,499,375.0,98,33491
+31-33,Manufacturing,manufacturing,254,500-999 employees,500,999,750.0,40,25772
+31-33,Manufacturing,manufacturing,260,1000+ employees,1000,5000,2000.0,17,32607
+42,Wholesale trade,wholesale,210,<5 employees,1,4,2.5,3013,5501
+42,Wholesale trade,wholesale,220,5-9 employees,5,9,7.0,1340,9079
+42,Wholesale trade,wholesale,230,10-19 employees,10,19,15.0,997,13586
+42,Wholesale trade,wholesale,241,20-49 employees,20,49,35.0,736,22254
+42,Wholesale trade,wholesale,242,50-99 employees,50,99,75.0,309,21922
+42,Wholesale trade,wholesale,251,100-249 employees,100,249,175.0,167,24740
+42,Wholesale trade,wholesale,252,250-499 employees,250,499,375.0,44,15353
+42,Wholesale trade,wholesale,254,500-999 employees,500,999,750.0,26,18260
+42,Wholesale trade,wholesale,260,1000+ employees,1000,5000,2000.0,14,21893
+44-45,Retail trade,retail,210,<5 employees,1,4,2.5,10758,21052
+44-45,Retail trade,retail,220,5-9 employees,5,9,7.0,4727,31153
+44-45,Retail trade,retail,230,10-19 employees,10,19,15.0,3282,43813
+44-45,Retail trade,retail,241,20-49 employees,20,49,35.0,2396,67317
+44-45,Retail trade,retail,242,50-99 employees,50,99,75.0,690,48496
+44-45,Retail trade,retail,251,100-249 employees,100,249,175.0,559,85281
+44-45,Retail trade,retail,252,250-499 employees,250,499,375.0,117,39501
+44-45,Retail trade,retail,254,500-999 employees,500,999,750.0,18,10971
+44-45,Retail trade,retail,260,1000+ employees,1000,5000,2000.0,3,10223
+48-49,Transportation and warehousing,transportation,210,<5 employees,1,4,2.5,2569,3796
+48-49,Transportation and warehousing,transportation,220,5-9 employees,5,9,7.0,664,4476
+48-49,Transportation and warehousing,transportation,230,10-19 employees,10,19,15.0,488,6694
+48-49,Transportation and warehousing,transportation,241,20-49 employees,20,49,35.0,404,12544
+48-49,Transportation and warehousing,transportation,242,50-99 employees,50,99,75.0,195,13476
+48-49,Transportation and warehousing,transportation,251,100-249 employees,100,249,175.0,136,20730
+48-49,Transportation and warehousing,transportation,252,250-499 employees,250,499,375.0,48,16502
+48-49,Transportation and warehousing,transportation,254,500-999 employees,500,999,750.0,7,4833
+48-49,Transportation and warehousing,transportation,260,1000+ employees,1000,5000,2000.0,15,27807
+51,Information,technology,210,<5 employees,1,4,2.5,1871,3238
+51,Information,technology,220,5-9 employees,5,9,7.0,603,4095
+51,Information,technology,230,10-19 employees,10,19,15.0,418,5552
+51,Information,technology,241,20-49 employees,20,49,35.0,330,10462
+51,Information,technology,242,50-99 employees,50,99,75.0,174,12383
+51,Information,technology,251,100-249 employees,100,249,175.0,143,21879
+51,Information,technology,252,250-499 employees,250,499,375.0,66,22464
+51,Information,technology,254,500-999 employees,500,999,750.0,28,19840
+51,Information,technology,260,1000+ employees,1000,5000,2000.0,22,41186
+52,Finance and insurance,finance,210,<5 employees,1,4,2.5,4750,9015
+52,Finance and insurance,finance,220,5-9 employees,5,9,7.0,2396,15751
+52,Finance and insurance,finance,230,10-19 employees,10,19,15.0,939,12314
+52,Finance and insurance,finance,241,20-49 employees,20,49,35.0,624,19063
+52,Finance and insurance,finance,242,50-99 employees,50,99,75.0,254,17888
+52,Finance and insurance,finance,251,100-249 employees,100,249,175.0,171,26351
+52,Finance and insurance,finance,252,250-499 employees,250,499,375.0,78,26862
+52,Finance and insurance,finance,254,500-999 employees,500,999,750.0,29,20603
+52,Finance and insurance,finance,260,1000+ employees,1000,5000,2000.0,27,51886
+53,Real estate and rental and leasing,real_estate,210,<5 employees,1,4,2.5,6340,9938
+53,Real estate and rental and leasing,real_estate,220,5-9 employees,5,9,7.0,1221,7744
+53,Real estate and rental and leasing,real_estate,230,10-19 employees,10,19,15.0,555,7361
+53,Real estate and rental and leasing,real_estate,241,20-49 employees,20,49,35.0,288,8518
+53,Real estate and rental and leasing,real_estate,242,50-99 employees,50,99,75.0,86,6025
+53,Real estate and rental and leasing,real_estate,251,100-249 employees,100,249,175.0,30,4442
+53,Real estate and rental and leasing,real_estate,252,250-499 employees,250,499,375.0,11,3688
+53,Real estate and rental and leasing,real_estate,254,500-999 employees,500,999,750.0,6,4047
+54,"Professional, scientific, and technical services",professional_services,210,<5 employees,1,4,2.5,14247,22061
+54,"Professional, scientific, and technical services",professional_services,220,5-9 employees,5,9,7.0,3073,20513
+54,"Professional, scientific, and technical services",professional_services,230,10-19 employees,10,19,15.0,1924,26184
+54,"Professional, scientific, and technical services",professional_services,241,20-49 employees,20,49,35.0,1514,46695
+54,"Professional, scientific, and technical services",professional_services,242,50-99 employees,50,99,75.0,598,41469
+54,"Professional, scientific, and technical services",professional_services,251,100-249 employees,100,249,175.0,387,58669
+54,"Professional, scientific, and technical services",professional_services,252,250-499 employees,250,499,375.0,136,47682
+54,"Professional, scientific, and technical services",professional_services,254,500-999 employees,500,999,750.0,49,31549
+54,"Professional, scientific, and technical services",professional_services,260,1000+ employees,1000,5000,2000.0,38,74863
+55,Management of companies and enterprises,management,210,<5 employees,1,4,2.5,363,601
+55,Management of companies and enterprises,management,220,5-9 employees,5,9,7.0,122,808
+55,Management of companies and enterprises,management,230,10-19 employees,10,19,15.0,157,2133
+55,Management of companies and enterprises,management,241,20-49 employees,20,49,35.0,163,5095
+55,Management of companies and enterprises,management,242,50-99 employees,50,99,75.0,112,8096
+55,Management of companies and enterprises,management,251,100-249 employees,100,249,175.0,117,17750
+55,Management of companies and enterprises,management,252,250-499 employees,250,499,375.0,52,17763
+55,Management of companies and enterprises,management,254,500-999 employees,500,999,750.0,23,15313
+55,Management of companies and enterprises,management,260,1000+ employees,1000,5000,2000.0,19,49219
+56,Administrative and support and waste management and remediation services,administrative,210,<5 employees,1,4,2.5,7752,10550
+56,Administrative and support and waste management and remediation services,administrative,220,5-9 employees,5,9,7.0,1537,10111
+56,Administrative and support and waste management and remediation services,administrative,230,10-19 employees,10,19,15.0,999,13493
+56,Administrative and support and waste management and remediation services,administrative,241,20-49 employees,20,49,35.0,773,23867
+56,Administrative and support and waste management and remediation services,administrative,242,50-99 employees,50,99,75.0,334,23248
+56,Administrative and support and waste management and remediation services,administrative,251,100-249 employees,100,249,175.0,257,39086
+56,Administrative and support and waste management and remediation services,administrative,252,250-499 employees,250,499,375.0,89,30644
+56,Administrative and support and waste management and remediation services,administrative,254,500-999 employees,500,999,750.0,39,27113
+56,Administrative and support and waste management and remediation services,administrative,260,1000+ employees,1000,5000,2000.0,16,51563
+61,Educational services,higher_education,210,<5 employees,1,4,2.5,1529,2526
+61,Educational services,higher_education,220,5-9 employees,5,9,7.0,624,4237
+61,Educational services,higher_education,230,10-19 employees,10,19,15.0,460,6297
+61,Educational services,higher_education,241,20-49 employees,20,49,35.0,391,11795
+61,Educational services,higher_education,242,50-99 employees,50,99,75.0,155,10683
+61,Educational services,higher_education,251,100-249 employees,100,249,175.0,127,19373
+61,Educational services,higher_education,252,250-499 employees,250,499,375.0,35,11764
+61,Educational services,higher_education,254,500-999 employees,500,999,750.0,21,14492
+61,Educational services,higher_education,260,1000+ employees,1000,5000,2000.0,31,149017
+62,Health care and social assistance,healthcare,210,<5 employees,1,4,2.5,7739,14048
+62,Health care and social assistance,healthcare,220,5-9 employees,5,9,7.0,4548,30706
+62,Health care and social assistance,healthcare,230,10-19 employees,10,19,15.0,4199,56440
+62,Health care and social assistance,healthcare,241,20-49 employees,20,49,35.0,2649,78821
+62,Health care and social assistance,healthcare,242,50-99 employees,50,99,75.0,1016,70440
+62,Health care and social assistance,healthcare,251,100-249 employees,100,249,175.0,608,89124
+62,Health care and social assistance,healthcare,252,250-499 employees,250,499,375.0,139,45898
+62,Health care and social assistance,healthcare,254,500-999 employees,500,999,750.0,45,31156
+62,Health care and social assistance,healthcare,260,1000+ employees,1000,5000,2000.0,59,201849
+71,"Arts, entertainment, and recreation",entertainment,210,<5 employees,1,4,2.5,1895,2839
+71,"Arts, entertainment, and recreation",entertainment,220,5-9 employees,5,9,7.0,585,3858
+71,"Arts, entertainment, and recreation",entertainment,230,10-19 employees,10,19,15.0,526,7105
+71,"Arts, entertainment, and recreation",entertainment,241,20-49 employees,20,49,35.0,417,12709
+71,"Arts, entertainment, and recreation",entertainment,242,50-99 employees,50,99,75.0,126,8398
+71,"Arts, entertainment, and recreation",entertainment,251,100-249 employees,100,249,175.0,95,14281
+71,"Arts, entertainment, and recreation",entertainment,252,250-499 employees,250,499,375.0,22,7292
+71,"Arts, entertainment, and recreation",entertainment,254,500-999 employees,500,999,750.0,4,2513
+72,Accommodation and food services,hospitality,210,<5 employees,1,4,2.5,5935,9985
+72,Accommodation and food services,hospitality,220,5-9 employees,5,9,7.0,3429,23250
+72,Accommodation and food services,hospitality,230,10-19 employees,10,19,15.0,3783,52580
+72,Accommodation and food services,hospitality,241,20-49 employees,20,49,35.0,3802,116246
+72,Accommodation and food services,hospitality,242,50-99 employees,50,99,75.0,958,62655
+72,Accommodation and food services,hospitality,251,100-249 employees,100,249,175.0,195,26923
+72,Accommodation and food services,hospitality,252,250-499 employees,250,499,375.0,19,6700
+72,Accommodation and food services,hospitality,254,500-999 employees,500,999,750.0,3,2420
+72,Accommodation and food services,hospitality,260,1000+ employees,1000,5000,2000.0,3,6949
+81,Other services (except public administration),other,210,<5 employees,1,4,2.5,11723,21993
+81,Other services (except public administration),other,220,5-9 employees,5,9,7.0,4155,27047
+81,Other services (except public administration),other,230,10-19 employees,10,19,15.0,2058,26900
+81,Other services (except public administration),other,241,20-49 employees,20,49,35.0,758,21920
+81,Other services (except public administration),other,242,50-99 employees,50,99,75.0,158,10775
+81,Other services (except public administration),other,251,100-249 employees,100,249,175.0,59,9429
+81,Other services (except public administration),other,252,250-499 employees,250,499,375.0,7,2184
+99,Industries not classified,other,210,<5 employees,1,4,2.5,264,295
+99,Industries not classified,other,220,5-9 employees,5,9,7.0,15,97
+99,Industries not classified,other,230,10-19 employees,10,19,15.0,9,129
+99,Industries not classified,other,241,20-49 employees,20,49,35.0,4,111
