@@ -1,0 +1,25 @@
+# Job Scraper Dependencies
+
+# HTTP requests
+requests>=2.31.0
+urllib3>=2.0.0
+
+# HTML parsing
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Optional: For JavaScript-heavy sites (LinkedIn, Glassdoor may need this)
+# selenium>=4.15.0
+# webdriver-manager>=4.0.0
+
+# Optional: For async scraping (faster but more complex)
+# aiohttp>=3.9.0
+
+# Optional: Proxy rotation services
+# requests[socks]  # For SOCKS proxy support
+
+# Data handling
+# pandas>=2.0.0  # Optional: for advanced data manipulation
+
+# Environment variable management (for API keys)
+python-dotenv>=1.0.0  # Optional: load .env files

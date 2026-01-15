@@ -14,10 +14,10 @@ ADZUNA_APP_KEY = "34e6f3959d58461538354d674d48b881"
 USAJOBS_API_KEY = "Y45Z7Gortr/kTzQhJgxHjDoY16NrzYFTY4IXgMbxs0o="
 USAJOBS_EMAIL = "charlielai3@gmail.com"
 
-ZIP_CODE = "05843"
-RADIUS_MILES = 50
+ZIP_CODE = "77386"
+RADIUS_MILES = 1
 RESULTS_PER_PAGE = 50
-ADZUNA_PAGES = 2
+ADZUNA_PAGES = 10
 USAJOBS_PAGES = 3
 
 # =========================================================

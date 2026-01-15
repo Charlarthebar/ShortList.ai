@@ -56,3 +56,8 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 2026-01-07 12:56:14,329 - __main__ - WARNING - Adzuna credentials missing
 2026-01-07 12:56:14,329 - __main__ - ERROR - Error processing adzuna for 10001: cannot access local variable 'inserted' where it is not associated with a value
 2026-01-07 12:56:14,329 - __main__ - INFO - Database connection closed
+2026-01-07 13:56:56,128 - __main__ - ERROR - Failed to connect to database: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
