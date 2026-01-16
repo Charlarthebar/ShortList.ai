@@ -1,0 +1,224 @@
+{
+  "zip_codes": [
+    "10001",
+    "10002",
+    "10003",
+    "90210",
+    "90211",
+    "90001",
+    "60601",
+    "60602",
+    "60603",
+    "77001",
+    "77002",
+    "77003",
+    "33101",
+    "33102",
+    "33109",
+    "98101",
+    "98102",
+    "98103",
+    "80201",
+    "80202",
+    "80203",
+    "30301",
+    "30302",
+    "30303",
+    "02139",
+    "02138",
+    "02140",
+    "02459",
+    "02460",
+    "02461",
+    "19101",
+    "19102",
+    "19103",
+    "94102",
+    "94103",
+    "94104",
+    "78701",
+    "78702",
+    "78703",
+    "02101",
+    "02102",
+    "02103",
+    "20001",
+    "20002",
+    "20003"
+  ],
+  "cities": [
+    {
+      "city": "New York",
+      "state": "NY"
+    },
+    {
+      "city": "Los Angeles",
+      "state": "CA"
+    },
+    {
+      "city": "Chicago",
+      "state": "IL"
+    },
+    {
+      "city": "Houston",
+      "state": "TX"
+    },
+    {
+      "city": "Phoenix",
+      "state": "AZ"
+    },
+    {
+      "city": "Philadelphia",
+      "state": "PA"
+    },
+    {
+      "city": "San Antonio",
+      "state": "TX"
+    },
+    {
+      "city": "San Diego",
+      "state": "CA"
+    },
+    {
+      "city": "Dallas",
+      "state": "TX"
+    },
+    {
+      "city": "San Jose",
+      "state": "CA"
+    },
+    {
+      "city": "Austin",
+      "state": "TX"
+    },
+    {
+      "city": "Jacksonville",
+      "state": "FL"
+    },
+    {
+      "city": "Fort Worth",
+      "state": "TX"
+    },
+    {
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "city": "Charlotte",
+      "state": "NC"
+    },
+    {
+      "city": "San Francisco",
+      "state": "CA"
+    },
+    {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    {
+      "city": "Seattle",
+      "state": "WA"
+    },
+    {
+      "city": "Denver",
+      "state": "CO"
+    },
+    {
+      "city": "Washington",
+      "state": "DC"
+    },
+    {
+      "city": "Boston",
+      "state": "MA"
+    },
+    {
+      "city": "El Paso",
+      "state": "TX"
+    },
+    {
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "city": "Nashville",
+      "state": "TN"
+    },
+    {
+      "city": "Portland",
+      "state": "OR"
+    },
+    {
+      "city": "Oklahoma City",
+      "state": "OK"
+    },
+    {
+      "city": "Las Vegas",
+      "state": "NV"
+    },
+    {
+      "city": "Memphis",
+      "state": "TN"
+    },
+    {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    {
+      "city": "Baltimore",
+      "state": "MD"
+    }
+  ],
+  "states": [
+    "AL",
+    "AK",
+    "AZ",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "ID",
+    "IL",
+    "IN",
+    "IA",
+    "KS",
+    "KY",
+    "LA",
+    "ME",
+    "MD",
+    "MA",
+    "MI",
+    "MN",
+    "MS",
+    "MO",
+    "MT",
+    "NE",
+    "NV",
+    "NH",
+    "NJ",
+    "NM",
+    "NY",
+    "NC",
+    "ND",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VT",
+    "VA",
+    "WA",
+    "WV",
+    "WI",
+    "WY",
+    "DC"
+  ]
+}
